@@ -264,6 +264,8 @@ void Task2_Button_Handlefxn(void* pv_param)
 	uint8_t read_button;
 	uint8_t prv_state;
 
+	printf("This is the button task handler callback function\n");
+
 	while(1)
 	{
 		read_button = HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin);
